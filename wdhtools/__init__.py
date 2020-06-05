@@ -7,5 +7,7 @@
 # @Name: __init__.py
 
 from .hello import *
+from .data_tools import *
+from .sklearn_tools import *
 
 name = 'wdhtools'
