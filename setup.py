@@ -14,5 +14,5 @@ setup(
     name='wdhtools',
     version='1.0.1',
     author='wdh',
-    packages=find_packages()
+    packages=find_packages(), install_requires=['pandas', 'sklearn']
 )
