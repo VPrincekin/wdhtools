@@ -64,7 +64,3 @@ def deletes(data, features):
         del data[feature]
     print("当前删除特征:", features)
     return data
-
-
-data = pd.read_csv('/Users/fotoable/Desktop/4.csv')
-print(isnull(data))
