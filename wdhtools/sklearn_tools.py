@@ -5,7 +5,6 @@
 # @Date: 2020-06-05
 # @Time: 11:17
 # @Name: sklearn_tools
-import pandas as pd
 from sklearn.preprocessing import OneHotEncoder, LabelEncoder, StandardScaler, MinMaxScaler
 from sklearn.decomposition import PCA
 
