@@ -12,7 +12,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='wdhtools',
-    version='1.0.4',
+    version='1.0.5',
     author='wdh',
     packages=find_packages(), install_requires=['pandas', 'sklearn']
 )

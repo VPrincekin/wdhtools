@@ -1,7 +1,6 @@
 README.md
 setup.py
 wdhtools/__init__.py
-wdhtools/data_tools.py
 wdhtools/hello.py
 wdhtools/sklearn_tools.py
 wdhtools.egg-info/PKG-INFO

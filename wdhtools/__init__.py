@@ -6,8 +6,8 @@
 # @Time: 17:17
 # @Name: __init__.py
 
-from .hello import *
 from .data_tools import *
-from .sklearn_tools import *
+from .view_tools import *
+from .model_tools import *
 
 name = 'wdhtools'
