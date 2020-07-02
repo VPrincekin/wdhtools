@@ -12,7 +12,7 @@ from xgboost import XGBClassifier
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
-import view_tools
+from .view_tools import correlation_heatmap
 
 model = [
     # 集成方法
@@ -106,7 +106,7 @@ def predict(data, features, target):
 
 def thermogram_model(model_predict):
     print('------热力图，观察不同模型之间的相关性')
-    view_tools.correlation_heatmap(model_predict)
+    correlation_heatmap(model_predict)
 
 
 def tune_feature(data, features, target, model):
@@ -130,7 +130,7 @@ def tune_model(data, features, target, model, param_dict):
     best_model = model_selection.GridSearchCV(model, param_grid=param_dict, scoring='roc_auc', cv=cv_split)
     best_model.fit(data[features], data[target])
 
-    print('------最好好的模型参数以及该参数下模型效果')
+    print('------最好的模型参数以及该参数下模型效果')
     best_results = model_selection.cross_validate(best_model, data[features], data[target], cv=cv_split,
                                                   return_train_score=True)
     print('AFTER DT Parameters: ', best_model.best_params_)
