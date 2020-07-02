@@ -125,3 +125,21 @@ def spearman(data, label, features):
     spr = spr.sort_values('corr')
     plt.figure(figsize=(6, 0.25 * len(features)))
     sns.barplot(data=spr, y='feature', x='corr', orient='h')
+
+
+def correlation_heatmap(data):
+    _, ax = plt.subplots(figsize=(14, 12))
+    colormap = sns.diverging_palette(220, 10, as_cmap=True)
+
+    _ = sns.heatmap(
+        data.corr(),
+        cmap=colormap,
+        square=True,
+        cbar_kws={'shrink': .9},
+        ax=ax,
+        annot=True,
+        linewidths=0.1, vmax=1.0, linecolor='white',
+        annot_kws={'fontsize': 12}
+    )
+    plt.title('Pearson Correlation of Features', y=1.05, size=15)
+    plt.show()
