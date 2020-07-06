@@ -1,2 +1,6 @@
 pandas
 sklearn
+xgboost
+matplotlib
+seaborn
+featexp
