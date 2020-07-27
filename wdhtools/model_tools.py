@@ -72,7 +72,8 @@ def predict(data, features, target):
     :param target: 目标字段 array
     :return:
     """
-    model_predict = data[target]
+    model_predict = pd.DataFrame()
+    model_predict['label'] = data[target]
     row_index = 0
     for alg in model:
         # 设置名字和参数
