@@ -12,7 +12,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='wdhtools',
-    version='1.1.1',
+    version='1.1.2',
     author='wdh',
     packages=find_packages(), install_requires=['pandas', 'sklearn', 'xgboost', 'matplotlib', 'seaborn', 'featexp']
 )
