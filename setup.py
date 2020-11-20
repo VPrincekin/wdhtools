@@ -14,5 +14,6 @@ setup(
     name='wdhtools',
     version='1.2.0',
     author='wdh',
-    packages=find_packages(), install_requires=['pandas', 'sklearn', 'xgboost', 'matplotlib', 'seaborn', 'featexp']
+    packages=find_packages(),
+    install_requires=['pandas', 'sklearn', 'xgboost', 'matplotlib', 'seaborn', 'featexp']
 )
